@@ -50,6 +50,7 @@ Some of the variables are easily understood, but a few can be a bit tricky to fi
 
 ### Setting up DNS
 
+Watch the video below:
 [![Watch the video](https://img.youtube.com/vi/WTjcPfwW2ys/default.jpg)](https://www.youtube.com/embed/WTjcPfwW2ys)
 
 ## Environment File
