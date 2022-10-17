@@ -1,13 +1,7 @@
----
-hide:
-  - footer
----
-<script>
-  document.title = "Deploy OCP - VSphere";
-</script>
-<p align = "left">
-    <img src='../images/vsphere.png'  align="top" style = "float">
-</p>
+# Deploy OCP - VSphere
+
+![VS Sphere](https://github.com/IBM/daffy/raw/main/daffydoc/docs/images/ducks.png)
+
 ## Platform Requirements
 
 To install Daffy on **VSphere**, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.
@@ -56,24 +50,14 @@ Some of the variables are easily understood, but a few can be a bit tricky to fi
 
 ### Setting up DNS
 
-<html>
-   <head>
-      <title>HTML Video embed</title>
-   </head>
-   <body>
-    <div style="text-align:center">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/WTjcPfwW2ys" frameborder="0" allowfullscreen></iframe>
-      </iframe>
-      </div>
-   </body>
-</html>
+[![Watch the video](https://img.youtube.com/vi/WTjcPfwW2ys/default.jpg)](https://www.youtube.com/embed/WTjcPfwW2ys)
+Watch the video
 
 ## Environment File
 
-Below are the VSphere IPI specific environment variables that must be defined in the /data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh file.
+Below are the VSphere IPI specific environment variables that must be defined in the `/data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh` file.
 
-!!! Note
-      You can look in the samples directory on your bastion for example of **VSphere** install : /data/daffy/env/samples/**vsphere-ipi-env.sh**
+> **Note**: You can look in the samples directory on your bastion for example of **VSphere** install : `/data/daffy/env/samples/vsphere-ipi-env.sh`
 
 <u>Valid Options:</u>
 
@@ -122,7 +106,9 @@ VSPHERE_INGRESS_VIP="xx.xxx.xxx"
 
 Optional:
 
-**OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE**=true
+```terminal
+OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE=true
+```
 
 If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage.
 
@@ -136,8 +122,7 @@ To deploy your cluster, run the build.sh script from the /data/daffy/ocp directo
 
 Once your cluster is fully deployed, you can access the help menu which has a number of options.
 
-!!! Note
-      &lt;ENVIRONMENT_NAME&gt; is the first part of your name that you used for the &lt;ENVIRONMENT_NAME&gt;-env.sh file
+> **Note**: `<ENVIRONMENT_NAME>` is the first part of your name that you used for the `<ENVIRONMENT_NAME>-env.sh` file
 
 Deploying an OpenShift cluster on VSphere using the Daffy scripts (using VSPhere-IPI install type):
 
